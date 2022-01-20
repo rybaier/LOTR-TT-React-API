@@ -3,6 +3,7 @@
 For this project I have decided to use an API that fetches data related to one of the greatest Trilogy's of all time. This App will provide users all the information they could want in their journey across Middle Earth, from movies and quotes to in depth history of characters 
 
 - api token was verified using hoppscotch.io (quite a handy tool I have discovered as it also displays the data that is fetched!)
+-.env succesfully hidden (note it needs to specifically be in the react app directory not the repo directory  )
 ### User Stories
 User wants info on LOTR 
 - User wants random facts about characters/movies/quotes - user hits RF button on corresponding page 
