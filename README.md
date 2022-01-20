@@ -28,6 +28,9 @@ For this project I have decided to use an API that fetches data related to one o
     - Presentation prep
 - Jan 26th - Presentation day!
 ##
+## Project Build
+[Link to my pseduo code](https://github.com/rybaier/React-API/blob/main/pseudo.js)
+
 ### User Stories
 User wants info on LOTR 
 - User wants random facts about characters/movies/quotes - user hits RF button on corresponding page 
