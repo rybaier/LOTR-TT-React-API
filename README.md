@@ -27,8 +27,7 @@ For this project I have decided to use an API that fetches data related to one o
     - Stretch Goal times
     - Presentation prep
 - Jan 26th - Presentation day!
-<br />
-
+##
 ### User Stories
 User wants info on LOTR 
 - User wants random facts about characters/movies/quotes - user hits RF button on corresponding page 
