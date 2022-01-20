@@ -4,6 +4,29 @@ For this project I have decided to use an API that fetches data related to one o
 
 - api token was verified using hoppscotch.io (quite a handy tool I have discovered as it also displays the data that is fetched!)
 -.env succesfully hidden (note it needs to specifically be in the react app directory not the repo directory  )
+
+## Project Timeline
+- Jan 19th 
+    - Project Proposal, Readme framework
+- Jan 20th 
+    - Project Timeline, PsedoCode, and MVP Steps laid out
+- Jan 21st 
+    - Build App Framework 
+    - (components, routes, reactstrap, basic CSS)
+    - perform all npm necessary installs
+    - connect framework and test displays with basic tags
+- Jan 22nd 
+    - Verify API data calls in each component produces desired data
+    - fix any bugs that this creates with basic framework
+- Jan 23rd 
+    - Utilze and display API data
+- Jan 24th 
+    - Achieve MVP status and finish complete style
+- Jan 25th 
+    - Confirm MVP status, fix any bugs 
+    - Stretch Goal times
+    - Presentation prep
+- Jan 26th - Presentation day!
 ### User Stories
 User wants info on LOTR 
 - User wants random facts about characters/movies/quotes - user hits RF button on corresponding page 
@@ -15,6 +38,7 @@ User wants info on LOTR
     - user searches LOTR book info
 - User will want available information to be easily navigable between categories for random information
 - User will want search functionality to be in home page to make it easy to search for information
+
 ### MVP 
 
 #### Full WireFrame Sketch
