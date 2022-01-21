@@ -83,5 +83,5 @@
         // function will return gathered data  
             // function will map through API data object for desired information
                 // use conditional to get correct data from object 
-                // return data that is considered true and matches search. 
+                // return data that is considered true and matches search.     
      
