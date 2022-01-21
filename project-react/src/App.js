@@ -1,7 +1,9 @@
 import React, {useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
+import Home from './components/Home'
+import { Container } from 'reactstrap';
+import {Route, Routes } from 'react-router-dom'
 
  
 function App() {
@@ -15,7 +17,12 @@ function App() {
 //   }, [])
 
   return (
-    <h1>Hello Middle Earth</h1>
+    <Container>
+      <h1>Hello Middle Earth</h1>
+      <Home />
+
+  
+    </Container>
   );
 }
 

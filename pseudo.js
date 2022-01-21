@@ -22,23 +22,26 @@
 
 //HOW I WILL BUILD MY APP checklist
 // Framework 
-    // NPM install react router, reactstrap, bootstrap
-        // import bootstrap, react router, and reactstrap
-    // Create component files organize them by directory called components 
-        // Page Components (MVP)
-            // Header
-            // Navigation Panel
-            // InfoDisplay card
-            // RandomFactSearch (button) (function)
-            // Search Bar (stretch) (function)
-            // Image Card (stretch)
-        // Component Files
-            // Home (MVP)
-            // Characters (MVP)
-            // Movies (stretch)
-            // Movie Quotes (MVP)
-            // Books (stretch)
+//CHECK    // NPM install react router, reactstrap, bootstrap
+//CHECK        // import bootstrap, react router, and reactstrap
+//CHECK    // Create component files organize them by directory called components 
+//CHECK       // Page Components (MVP)
+//CHECK            // Header
+//CHECK            // Navigation Panel
+//CHECK            // InfoDisplay card
+//CHECK            // RandomFactSearch (button) (function)
+//CHECK            // Search Bar (stretch) (function)
+//CHECK            // Image Card (stretch)
+//CHECK        // Component Files
+//CHECK            // Home (MVP)
+//CHECK            // Characters (MVP)
+//CHECK           // Movies (stretch)
+//CHECK            // Quotes (MVP)
+//CHECK            // Books (stretch)
     // Build Each Header, Navigation Panel and Info Display Page Components basic layout 
+//CHECK        //Header
+        //Navigation Panel
+        // InfoDisplay
     // Build Each Component File basic layout
         //add page components
         // add basic tags for connectivity test
@@ -84,4 +87,11 @@
             // function will map through API data object for desired information
                 // use conditional to get correct data from object 
                 // return data that is considered true and matches search.     
-     
+
+// MVP steps
+//npm inatall 
+//build componen framework designated as MVP
+// build basic css for components for correct display of data 
+// add in Route Paths for all pages 
+// add API Call with Authorization header 
+// build random search function
