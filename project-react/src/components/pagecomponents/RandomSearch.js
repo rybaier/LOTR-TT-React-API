@@ -4,6 +4,13 @@ import { Col, Container } from "reactstrap";
 const RandomSearch = () => {
     return(
         //randomize information function attached to onClick
+        // can the onclick be nested inside this component or 
+        // should this it be a parent function passed to this component as props?
+        // should I use this as a place to build and test function then
+        // take code out of component and slot it into each individual component 
+        // to eliminate a connection branch. Now that I type this this seems 
+        // the better course of action. I should get back to coding now 
+        // on to the Routes!
         <Container>
             <button>
                 Randomize Information 
