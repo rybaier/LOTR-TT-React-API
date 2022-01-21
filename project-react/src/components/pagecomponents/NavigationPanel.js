@@ -5,11 +5,12 @@ import { Card, Navbar, NavLink, NavItem, Nav} from "reactstrap";
 const NavigationPanel = () => {
     return (
     <Card className="nav-panel">
-        <Navbar color="green" dark light expand="md" full>
+        <Navbar color="green" dark light expand="md" >
             {/* Wrap these in Links? to utilize react router dom*/}
                 <NavLink className= 'links' href="/components/Home"> Home </NavLink>
-                <NavLink className= 'links' href="/components/Character"> Characters </NavLink>
-                <NavLink className= 'links' href="/components/Quotes"> Quotes </NavLink>
+                 <NavLink className= 'links' href="/components/Quotes"> Quotes </NavLink>
+                 <NavLink className= 'links' href="/components/Characters"> Characters </NavLink>
+                 <NavLink className= 'links' href="/components/Movies"> Movies </NavLink>
         </Navbar>
     </Card>
     )

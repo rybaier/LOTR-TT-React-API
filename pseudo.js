@@ -40,11 +40,11 @@
 //CHECK            // Books (stretch)
     // Build Each Header, Navigation Panel and Info Display Page Components basic layout 
 //CHECK        //Header
-        //Navigation Panel
-        // InfoDisplay
+//CHECK         //Navigation Panel
+//CHECK         // InfoDisplay
     // Build Each Component File basic layout
-        //add page components
-        // add basic tags for connectivity test
+//CHECK         //add page components
+//CHECK         // add basic tags for connectivity test
     // Add all Route Paths
     // Add basic css borders, margins not already done with reactstrap and bootstrap for easy visual test
     // Test page connectivity with links and <h> tags to show connect

@@ -6,6 +6,8 @@ import NavigationPanel from "./pagecomponents/NavigationPanel";
 import InfoDisplay from "./pagecomponents/InfoDisplay";
 import RandomSearch from "./pagecomponents/RandomSearch";
 
+
+
 const Home = () => {
     // Do I have seperate pages that display the information 
     // from each component API endpoint or do i have the links call
@@ -20,9 +22,7 @@ const Home = () => {
                     <RandomSearch />
                     <InfoDisplay />
             </Row>
-            {/* <Routes>
-
-            </Routes> */}
+          
         </Container>    
     )
 }
