@@ -27,6 +27,8 @@
 //CHECK    // Create component files organize them by directory called components 
 //CHECK       // Page Components (MVP)
 //CHECK            // Header
+
+
 //CHECK            // Navigation Panel
 //CHECK            // InfoDisplay card
 //CHECK            // RandomFactSearch (button) (function)
