@@ -6,12 +6,12 @@
 
 // TIMELINE Based on End of Day goals
 //CHECK // Jan 19th - Project Proposal, Readme framework wireframes
-// Jan 20th - Project Timeline, PsedoCode, and MVP Steps laid out
-// Jan 21st - Build App Framework 
-//              - (components, routes, reactstrap, basic CSS)
+//CHECK // Jan 20th - Project Timeline, PsedoCode, and MVP Steps laid out
+//CHECK // Jan 21st - Build App Framework 
+//                      - (components, routes, reactstrap, basic CSS)
 //          - perform all npm necessary installs
 //          - connect framework and test displays with basic tags
-// Jan 22nd - Verify API data calls in each component produces desired data
+//CHECK // Jan 22nd - Verify API data calls in each component produces desired data
 //          - fix any bugs that this creates with basic framework
 // Jan 23rd - Utilze and display API data
 // Jan 24th - Achieve MVP status and finish complete style
@@ -27,8 +27,6 @@
 //CHECK    // Create component files organize them by directory called components 
 //CHECK       // Page Components (MVP)
 //CHECK            // Header
-
-
 //CHECK            // Navigation Panel
 //CHECK            // InfoDisplay card
 //CHECK            // RandomFactSearch (button) (function)
@@ -91,9 +89,15 @@
                 // return data that is considered true and matches search.     
 
 // MVP steps
-//npm inatall 
-//build componen framework designated as MVP
-// build basic css for components for correct display of data 
-// add in Route Paths for all pages 
-// add API Call with Authorization header 
+//CHECK //npm install 
+//CHECK //build component framework designated as MVP
+//CHECK // build basic css for components for correct display of data 
+//CHECk // add in Route Paths for all pages 
+//CHECK // add API Call with Authorization header 
+// Get API to display data 
 // build random search function
+
+//Build NOTES 
+//after building framework and attaching links decided to make seperate info display sections inside each component page
+//and attaching API data, it became clear that the most seemless way to do this was to remove the infodisplay component 
+    //entirely snd process the data on the component page directly to avoid data diplay cross contamination

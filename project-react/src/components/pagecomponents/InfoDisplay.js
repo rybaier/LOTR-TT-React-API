@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 import { Card, CardBody, CardText, CardTitle } from "reactstrap"
 import { Link } from "react-router-dom";
 
-const InfoDisplay = () => {
+const InfoDisplay = ({data} ) => {
+   console.log(data)
     return (
         <Card className="info-display">
             <CardTitle tag={'h4'}>LOTR Information Type</CardTitle>

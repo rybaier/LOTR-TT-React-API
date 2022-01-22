@@ -11,6 +11,8 @@ const RandomSearch = () => {
         // to eliminate a connection branch. Now that I type this this seems 
         // the better course of action. I should get back to coding now 
         // on to the Routes!
+        // also instead of creating a function to randomize infromation her, I will do it on each data set display
+        // this componenent simply needs to have an onClick function that resets the page 
         <Container>
             <button>
                 Randomize Information 
