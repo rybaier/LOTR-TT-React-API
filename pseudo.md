@@ -116,4 +116,5 @@
 - random search button will be updated to force a rerender of data if selected 
 - have to decide what type of data to display on home page leaning towards quotes, but maybe books?? or characters?
 - gathering api data was relatively simple, however getting it to render was a bit more complicated. After several hours I came upon the solution while explaining the issue to someone else. it was a simple conditional not statement that created a data load screen (face palm)
-- changed my pseudo to a md file from a js file based on sound advice was still doing pseudo out of habit because i liked the green color of the text while thinking however now that it's in a markdown it looks a lot nicer. so I must continue with this method moving forward.  
+- changed my pseudo to a md file from a js file based on sound advice was still doing pseudo out of habit because i liked the green color of the text while thinking however now that it's in a markdown it looks a lot nicer. so I must continue with this method moving forward. 
+- Perhaps a button that displays all the movie data instead of just random in the future  

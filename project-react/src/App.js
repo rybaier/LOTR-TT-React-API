@@ -9,11 +9,7 @@ import Movies from './components/Movies'
 import Quotes from './components/Quotes'
  
 function App() {
-  const [movieData, setMovieData] =useState([])
-  //this takes movie data
-  const [quotesData, setQuotesData] = useState([])
-  // this takes quotes movie data
-  const [characterData, setCharacterData] = useState([])
+
   const authorizeSearch = {
     //This is the how the bearer token is used in an authorization header
         'Accept': 'application/json', //this defines how the data is accepted

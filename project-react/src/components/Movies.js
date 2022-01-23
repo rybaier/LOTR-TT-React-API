@@ -71,6 +71,7 @@ const Movies =() => {
 }
 export default Movies
 
+// perhaps a button that calls for all the movie data to be displayed instead of the random one 
 // async function worked well but didn't add any obvious benefit to the use catch as the solution to my multiple renders
 //was having a loading conditional statement while the api data was being gathered 
 // const fetchMovies = async () => {
