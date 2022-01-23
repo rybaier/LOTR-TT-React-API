@@ -39,7 +39,7 @@ const Movies =({data}) => {
                     <NavigationPanel />
                     <RandomSearch />
             </Row>
-            {/* {movieData.docs.map(movie =>{
+            {/* {(movieData.docs || []).map(movie =>{
                 return(
                     <Card className="info-display">
                     <CardTitle tag={'h4'}>{movie.name}</CardTitle>
