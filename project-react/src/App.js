@@ -25,33 +25,33 @@ function App() {
 //multiple fetch calls within a single use effect creates endless loop that breaks api request limit then call stops
         //solved aboce by putting additional fetch calls in a .then of the original 
 //having multiple useEffects with a single fetch call within is what is working 
- useEffect(()=> { 
-    fetch(`${URL}movie`, {
-      headers: authorizeSearch
-    })
-    .then(res => res.json())
-    .then(json => setMovieData(json))
+//  useEffect(()=> { 
+//     fetch(`${URL}movie`, {
+//       headers: authorizeSearch
+//     })
+//     .then(res => res.json())
+//     .then(json => setMovieData(json))
   
-    .then(fetch(`${URL}quote`, {
-      headers: authorizeSearch
-    })
-    .then(res => res.json())
-    .then(json => setQuotesData(json)))
+//     .then(fetch(`${URL}quote`, {
+//       headers: authorizeSearch
+//     })
+//     .then(res => res.json())
+//     .then(json => setQuotesData(json)))
     
-    .then(fetch(`${URL}character`, {
-      headers: authorizeSearch
-    })
-    .then(res => res.json())
-    .then(json => setCharacterData(json)))
+//     .then(fetch(`${URL}character`, {
+//       headers: authorizeSearch
+//     })
+//     .then(res => res.json())
+//     .then(json => setCharacterData(json)))
     
-    .catch(console.error)
-  }, [])
+//     .catch(console.error)
+//   }, [])
 
   //ApI fetch brins back single object with the key docs which holds the array as its value
   //use dot notation to access array data
-  console.log(movieData.docs)
-  console.log(quotesData.docs)
-  console.log(characterData.docs)
+  // console.log(movieData.docs)
+  // console.log(quotesData.docs)
+  // console.log(characterData.docs)
   //Why does only Quotes link work all three nav links are typed exactly the same 
   
   
@@ -61,9 +61,9 @@ function App() {
         <h1>Hello Middle Earth</h1>
             <Routes>
                   <Route path= '/' element={<Home />} />
-                  <Route path= '/components/Characters' element={<Characters data={characterData}/>} />
-                  <Route path= '/components/Movies' element={<Movies data={movieData} />} />
-                  <Route path= '/components/Quotes' element={<Quotes data={quotesData} />} />
+                  <Route path= '/components/Characters' element={<Characters />} />
+                  <Route path= '/components/Movies' element={<Movies />} />
+                  <Route path= '/components/Quotes' element={<Quotes  />} />
              </Routes>
         </Container>
           </div>

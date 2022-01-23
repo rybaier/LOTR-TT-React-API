@@ -44,7 +44,16 @@ const Movies =() => {
                     <NavigationPanel />
                     <RandomSearch />
             </Row>
-           
+            {console.log(movieData.docs[randomIndex])}
+
+                    <Card className="info-display">
+                    <CardTitle tag={'h4'}>{movieData.docs[randomIndex].name}</CardTitle>
+                    <CardTitle tag={'h6'}> Rotten Tomatoes Score: {movieData.docs[randomIndex].rottenTomatoesScore}%</CardTitle>
+                        <CardText className='h7'> Run Time: {movieData.docs[randomIndex].runtimeInMinutes} </CardText>
+                        <CardText className='h7'> Academy Award Nominations: {movieData.docs[randomIndex].academyAwardNominations}</CardText>
+                        <CardText className='h7'> Academy Award Wins: {movieData.docs[randomIndex].academyAwardWins}</CardText>
+                     </Card>
+            {/* the following code displays all data of array the above data gives random index data
             {movieData.docs.map(movie =>{
                 return(
                     <Card className="info-display">
@@ -55,7 +64,7 @@ const Movies =() => {
                         <CardText className='h7'> Academy Award Wins: {movie.academyAwardWins}</CardText>
                      </Card>
                 )
-            })}
+            })} */}
          
         </Container> 
     )
