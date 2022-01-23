@@ -6,30 +6,35 @@ import NavigationPanel from './pagecomponents/NavigationPanel'
 import RandomSearch from './pagecomponents/RandomSearch'
 import InfoDisplay from './pagecomponents/InfoDisplay'
 
-const Movies =({data}) => {
- console.log(data)
-    const [movieData, setMovieData] = useState(data)
-    const [movieInfo, setMovieInfo] =useState()
+const Movies =() => {
 
-    // setMovieInfo( Math.floor(Math.random()* movieData.docs.length))
-    console.log(movieInfo)
-   
-    const authorizeSearch = {
+    const [movieData, setMovieData] = useState()
+    const [movieInfo, setMovieInfo] =useState(null)
+
+    const randomIndex = Math.floor(Math.random()* 8)
+    console.log(randomIndex)
+    //trying to use array.length consistently breaks code creating undefined properties 
+      const URL = process.env.REACT_APP_URL
+         const authorizeSearch = {
         //This is the how the bearer token is used in an authorization header
             'Accept': 'application/json', //this defines how the data is accepted
             'Authorization' : `${process.env.REACT_APP_API_TOKEN}`
-          }
-      const URL = process.env.REACT_APP_URL
+          } 
   
-    //  useEffect(()=> { 
-    //     fetch(`${URL}movie`, {
-    //       headers: authorizeSearch
-    //     })
-    //     .then(res => res.json())
-    //     .then(json => setMovieData(json))
-    //     .catch(console.error)
-    //  }, [])
-    //  console.log(movieData.docs)
+     useEffect(()=> {
+       
+        fetch(`${URL}movie`, {
+          headers: authorizeSearch
+        })
+        .then(res => res.json())
+        .then(json => setMovieData(json))
+      
+        .catch(console.error)
+     }, [])
+     console.log(movieData)
+     if (!movieData){
+         return <h6> Loading Movie Data</h6>
+     }
      
     return (
         <Container>
@@ -39,7 +44,8 @@ const Movies =({data}) => {
                     <NavigationPanel />
                     <RandomSearch />
             </Row>
-            {/* {(movieData.docs || []).map(movie =>{
+           
+            {movieData.docs.map(movie =>{
                 return(
                     <Card className="info-display">
                     <CardTitle tag={'h4'}>{movie.name}</CardTitle>
@@ -49,9 +55,21 @@ const Movies =({data}) => {
                         <CardText className='h7'> Academy Award Wins: {movie.academyAwardWins}</CardText>
                      </Card>
                 )
-            })} */}
+            })}
          
-        </Container>
+        </Container> 
     )
 }
 export default Movies
+
+// async function worked well but didn't add any obvious benefit to the use catch as the solution to my multiple renders
+//was having a loading conditional statement while the api data was being gathered 
+// const fetchMovies = async () => {
+
+//     await fetch(`${URL}movie`, {
+//       headers: authorizeSearch
+//     })
+//     .then(res => res.json())
+//     .then(json => setMovieData(json))
+//     .catch(console.error)
+// }
