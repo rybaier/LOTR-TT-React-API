@@ -1,9 +1,9 @@
 # React-API - ?The One App - working title?
 ### Proposal 
-For this project I have decided to use an API that fetches data related to one of the greatest Trilogy's of all time. This App will provide users all the information they could want in their journey across Middle Earth, from movies and quotes to in depth history of characters 
+For this project I have decided to use an API that fetches data related to one of the greatest Trilogy's of all time. This App will provide users with random basic information for their journey across Middle Earth, from movie stats and quotes to short snippets of factual info of characters 
 
 - api token was verified using hoppscotch.io (quite a handy tool I have discovered as it also displays the data that is fetched!)
--.env succesfully hidden (note it needs to specifically be in the react app directory not the repo directory  )
+- .env succesfully hidden (note it needs to specifically be in the react app directory not the repo directory  )
 
 ## Project Timeline
 - Jan 19th 

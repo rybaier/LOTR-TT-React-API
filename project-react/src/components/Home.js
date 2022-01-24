@@ -51,9 +51,9 @@ const Home = () => {
             <Header />
             <Col className="nav-and-display">
                     <NavigationPanel />
-                    <button onClick={()=> window.location.reload(false)}>
+                    {/* <button onClick={()=> window.location.reload(false)}>
                         Randomize Information 
-                    </button>
+                    </button> */}
             </Col>
             <Card className="home-display">
             <CardTitle tag={'h4'}>LOTR Home Information Type</CardTitle>

@@ -43,7 +43,7 @@ const Characters =( {data} ) => {
             <Col className="nav-and-display">
                     <NavigationPanel />
                     <button onClick={()=> window.location.reload(false)}> 
-                        Randomize Information 
+                        Next Character
                     </button>
             </Col>
             {console.log(characterData.docs[randomIndex])}

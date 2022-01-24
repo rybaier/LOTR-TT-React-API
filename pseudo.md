@@ -75,23 +75,24 @@
 #### FUNCTIONS 
 - Function List
     - Random Data display
-    - Random Search function
-        - useEffect API call and Authorization header with random endpoint assigned
-             - create endpoint array variable 
-             - Math.random for index number of endpoint array assigned to variable
-             - endppoint variable interpolated into URL
-             - sets API data to state variable
-        - returns loading statement while gathering data
-        - returns random LOTR info to useState variable
-            - state variable data then used in corresponding component
-                - state variable mapped through for array with Math.random
-                    - map through chosen array object 
-                        - map through chosen object to gain final data for display
-                            - returns data 
+        - Random Search button
+            - (update) as there are really only three usable endpoints for random data each has been given a seperate component to display that specific data 
+                - user will be able to distinguish type of data by navigating to type of data through navigation 
+            - useEffect API call and Authorization header with random endpoint assigned
+                - create endpoint state variable 
+                - sets API data to state variable
+                - Math.random for index number of endpoint array assigned to variable
+            - returns loading statement while gathering data
+            - returns random LOTR info to useState variable
+                - state variable data then used in corresponding component
+                    - state variable mapped through for array with Math.random
+                        - map through chosen array object 
+                            - map through chosen object to gain final data for display
+                                - returns data 
     - Function for parsing through API data
         - map function to create usable variables to display data
         - function needs to be in each component page
-    - Search Bar Function
+    - Search Bar Function (stretch)
         - function will take input value (text) and compare it to endpoint array variable 
             - using conditional endpoint array index will be applied to API fetch call
         - function will return gathered data  
@@ -108,14 +109,18 @@
     - add API Call with Authorization header (CHECK)
     - Get API to display data (CHECK)
     - build randomize info function(CHECK)
-    - Match random quote data with character id for character name 
-
+### stretch goals 
+- add Who said it quiz version to quotes
+    - Match random quote data with character id for character name for guessing 
+    - add 8 random charcater names 
+    - 
 ### Build NOTES 
 - after building framework and attaching links decided to make seperate info display sections inside each component page
-- and attaching API data, it became clear that the most seemless way to do this was to remove the infodisplay component entirely snd process the data on the component page directly to avoid data diplay cross contamination
+- and attaching API data, it became clear that the most seemless way to do this was to remove the infodisplay component entirely and process the data on the component page directly to avoid data diplay cross contamination
 - changed random search function to random display data function on page render 
 - random search button will be updated to force a rerender of data if selected 
 - have to decide what type of data to display on home page leaning towards quotes, but maybe books?? or characters?
 - gathering api data was relatively simple, however getting it to render was a bit more complicated. After several hours I came upon the solution while explaining the issue to someone else. it was a simple conditional not statement that created a data load screen (face palm)
 - changed my pseudo to a md file from a js file based on sound advice was still doing pseudo out of habit because i liked the green color of the text while thinking however now that it's in a markdown it looks a lot nicer. so I must continue with this method moving forward. 
 - Perhaps a button that displays all the movie data instead of just random in the future  
+- random search component removed, single button with in it moved to individual pages instead 

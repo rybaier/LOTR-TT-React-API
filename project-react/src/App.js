@@ -23,29 +23,29 @@ function App() {
 //multiple fetch calls within a single use effect creates endless loop that breaks api request limit then call stops
         //solved aboce by putting additional fetch calls in a .then of the original 
 //having multiple useEffects with a single fetch call within is what is working 
- useEffect(()=> { 
-    fetch(`${URL}movie`, {
-      headers: authorizeSearch
-    })
-    .then(res => res.json())
-    .then(json => setMovieData(json))
+//  useEffect(()=> { 
+//     fetch(`${URL}movie`, {
+//       headers: authorizeSearch
+//     })
+//     .then(res => res.json())
+//     .then(json => setMovieData(json))
     
-    .then(fetch(`${URL}character`, {
-      headers: authorizeSearch
-    })
-    .then(res => res.json())
-    .then(json => setCharacterData(json)))
+//     .then(fetch(`${URL}character`, {
+//       headers: authorizeSearch
+//     })
+//     .then(res => res.json())
+//     .then(json => setCharacterData(json)))
     
-    .catch(console.error)
-  }, [])
+//     .catch(console.error)
+//   }, [])
 
 //   //ApI fetch brins back single object with the key docs which holds the array as its value
 //   //use dot notation to access array data
-  console.log(movieData)
+  // console.log(movieData)
 //   console.log(bookData)
-  console.log(characterData)
+  // console.log(characterData)
   //Why does only Quotes link work all three nav links are typed exactly the same 
-  
+  //used to pass data down via props to quotes, changed mind characterNames = {characterData} movieNames = {movieData}
   
     return (
       <div id='main-background'>
@@ -55,7 +55,7 @@ function App() {
                   <Route path= '/' element={<Home />} />
                   <Route path= '/components/Characters' element={<Characters />} />
                   <Route path= '/components/Movies' element={<Movies />} />
-                  <Route path= '/components/Quotes' element={<Quotes characterNames = {characterData} movieNames = {movieData} />} />
+                  <Route path= '/components/Quotes' element={<Quotes  />} />
              </Routes>
         </Container>
           </div>

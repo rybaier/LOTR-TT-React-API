@@ -44,7 +44,7 @@ const Movies =() => {
             <Col className="nav-and-display">
                     <NavigationPanel />
                     <button onClick={()=> window.location.reload(false)}>
-                        Randomize Information 
+                        Next Movie
                     </button>
             </Col>
             {console.log(movieData.docs[randomIndex])}

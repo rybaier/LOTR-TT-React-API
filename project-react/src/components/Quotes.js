@@ -6,15 +6,14 @@ import NavigationPanel from './pagecomponents/NavigationPanel'
 import RandomSearch from './pagecomponents/RandomSearch'
 import InfoDisplay from './pagecomponents/InfoDisplay'
 
-const Quotes =({ characterNames, movieNames }) => {
-    console.log(characterNames, movieNames)
+const Quotes =() => {
+   
 
     const [quotesData, setQuotesData] = useState()
-    const [movieData, setMovieData] =useState([movieNames])
-    const [characterData, setCharacterData] = useState([characterNames])
+    const [characterData, setCharacterData] = useState()
+    const [randomQuote, setRandomQuote] = useState()
 
-    const [characterName, setCharacterName] = useState('')
-    const [movieName, setMovieName] =useState('')
+
 
     const randomIndex = Math.floor(Math.random()* 1000)
     console.log(randomIndex)
@@ -25,29 +24,36 @@ const Quotes =({ characterNames, movieNames }) => {
             'Accept': 'application/json', //this defines how the data is accepted
             'Authorization' : `${process.env.REACT_APP_API_TOKEN}`
           } 
+
+    //  const getNames = () => {
+    //    useEffect(() => {
+    //        fetch(`${url}character?_id=`)
+    //    })
+    //     console.log(characterData)}
+    //  make a who said it version for the quotes
+    //      //How am i going to get the characters name out of the character data array by matching id
+    //      // use async function to delay render until second api call made from 
+    //  }
   
      useEffect(()=> {
-       
         fetch(`${URL}quote`, {
           headers: authorizeSearch
         })
         .then(res => res.json())
         .then(json => setQuotesData(json))
+        
+
         .catch(console.error)
+    
      }, [])
 
-
-     console.log(movieData)
      console.log(quotesData)
-     console.log(characterData)
+     
      if (!quotesData){
          return <h6> Loading Quote Data</h6>
      }
-     const getNames = () => {
-        
-         //How am i going to get the characters name out of the character data array by matching id
-     }
-     getNames()
+
+    
      //how to put if statements regarding available api data to display??
     return (
         <main className='quotes-background'>
@@ -57,13 +63,13 @@ const Quotes =({ characterNames, movieNames }) => {
             <Col className="nav-and-display">
                     <NavigationPanel />
                     <button onClick={()=> window.location.reload(false)}>
-                        Randomize Information 
+                       Next Quote
                     </button>
             </Col>
             {console.log(quotesData.docs[randomIndex])}
-
+          
                     <Card className="quote-display">
-                    <CardTitle tag={'h4'}>{quotesData.docs[randomIndex].dialog}</CardTitle>
+                    <CardTitle tag={'h2'}>"{quotesData.docs[randomIndex].dialog}"</CardTitle>
                     <CardTitle tag={'h6'}> name {quotesData.docs[randomIndex].character}</CardTitle>
                         {/* <CardText className='h7'> {movieName} </CardText> */}
                      </Card>
