@@ -37,16 +37,19 @@ const Movies =() => {
      }
      
     return (
+        <main id='movie-background'>
         <Container>
             <h1>Movies</h1>
             <Header />
-            <Row className="nav-and-display">
+            <Col className="nav-and-display">
                     <NavigationPanel />
-                    <RandomSearch />
-            </Row>
+                    <button>
+                        Randomize Information 
+                    </button>
+            </Col>
             {console.log(movieData.docs[randomIndex])}
 
-                    <Card className="info-display">
+                    <Card className="movies-display">
                     <CardTitle tag={'h4'}>{movieData.docs[randomIndex].name}</CardTitle>
                     <CardTitle tag={'h6'}> Rotten Tomatoes Score: {movieData.docs[randomIndex].rottenTomatoesScore}%</CardTitle>
                         <CardText className='h7'> Run Time: {movieData.docs[randomIndex].runtimeInMinutes} </CardText>
@@ -67,6 +70,7 @@ const Movies =() => {
             })} */}
          
         </Container> 
+        </main>
     )
 }
 export default Movies

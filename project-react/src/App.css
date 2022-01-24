@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Pirata+One&family=UnifrakturCook:wght@700&display=swap');
+
+/* 
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Pirata One', cursive;
+font-family: 'UnifrakturCook', cursive;
+ */
+
 h1, h2, h4, h6, .h7{
   display: flex;
   justify-content: center;
 }
 /* checkout blockquote on css tricks */
+.nav-and-display, .quote-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-display {
+  font-family: 'Berkshire Swash', cursive;
+}
+.characters-display{
+  font-family:'Pirata One', cursive;
+}
+.movies-display{
+  font-family: 'Berkshire Swash', cursive;
+}
+#main-background{
+background-image: url(/project-react/src/images/home.jpg);
+}
+#home-background{
+background-image: url(/project-react/src/images/homepage.jpg);
+}
+#character-background{
+background-image: url(/project-react/src/images/Characterpage.jpg);
+}
+#quotes-background{
+background-image: url(/project-react/src/images/quotespage.jpg);
+}
+#movie-background{
+  background-image: url(/project-react/src/images/moviepage.jpg);
+}

@@ -36,16 +36,19 @@ const Characters =( {data} ) => {
      //how to put if statements regarding available api data to display??
      // need to add hyperlink to wiki link
     return (
+        <main id='character-background'>
         <Container>
             <h1>Characters</h1>
             <Header />
-            <Row className="nav-and-display">
+            <Col className="nav-and-display">
                     <NavigationPanel />
-                    <RandomSearch />
-            </Row>
+                    <button>
+                        Randomize Information 
+                    </button>
+            </Col>
             {console.log(characterData.docs[randomIndex])}
 
-                    <Card className="info-display">
+                    <Card className="characters-display">
                     <CardTitle tag={'h4'}>{characterData.docs[randomIndex].name}</CardTitle>
                     <CardTitle tag={'h6'}> Race: {characterData.docs[randomIndex].race}</CardTitle>
                         <CardText className='h7'> Gender: {characterData.docs[randomIndex].gender} </CardText>
@@ -55,6 +58,7 @@ const Characters =( {data} ) => {
          
          
         </Container> 
+        </main>
     )
 }
 export default Characters

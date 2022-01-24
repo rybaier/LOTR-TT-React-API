@@ -103,11 +103,12 @@
 - MVP checklist
     - npm install (CHECK)
     - build component framework designated as MVP (CHECK)
-    - build basic css for components for correct display of data 
+    - build basic css for components for correct display of data (CHECK)
     - add in Route Paths for all pages (CHECK)
     - add API Call with Authorization header (CHECK)
-    - Get API to display data 
-    - build random search function
+    - Get API to display data (CHECK)
+    - build randomize info function(CHECK)
+    - Match random quote data with character id for character name 
 
 ### Build NOTES 
 - after building framework and attaching links decided to make seperate info display sections inside each component page
