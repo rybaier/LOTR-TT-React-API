@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Container, Row, Col, Card,CardBody, CardText, CardTitle, NavLink } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
-import RandomSearch from './pagecomponents/RandomSearch'
 import InfoDisplay from './pagecomponents/InfoDisplay'
 
 const Characters =( {data} ) => {
@@ -31,26 +30,30 @@ const Characters =( {data} ) => {
      }, [])
      console.log(characterData)
      if (!characterData){
-         return <h6> Loading Character Data</h6>
+         return <p> Loading Character Data</p>
      }
      //how to put if statements regarding available api data to display??
      // need to add hyperlink to wiki link
     return (
         <main id='character-background'>
         <Container>
-            <h1>Characters</h1>
-            <Header />
-            <Col className="nav-and-display">
+            
+             <Col className="nav-and-display">
+                    <Header />
                     <NavigationPanel />
                     <button onClick={()=> window.location.reload(false)}> 
                         Next Character
                     </button>
+                    <h2>Characters</h2>
             </Col>
+            
+            
+           
             {console.log(characterData.docs[randomIndex])}
 
                     <Card className="characters-display">
-                    <CardTitle tag={'h4'}>{characterData.docs[randomIndex].name}</CardTitle>
-                    <CardTitle tag={'h6'}> Race: {characterData.docs[randomIndex].race}</CardTitle>
+                    <CardTitle className='h7'>Name: {characterData.docs[randomIndex].name}</CardTitle>
+                    <CardTitle className='h7'> Race: {characterData.docs[randomIndex].race}</CardTitle>
                         <CardText className='h7'> Gender: {characterData.docs[randomIndex].gender} </CardText>
                         <CardText className='h7'> Birth: {characterData.docs[randomIndex].birth}</CardText>
                         <NavLink className='h7' href = {characterData.docs[randomIndex].wikiUrl}> Wiki Link </NavLink>

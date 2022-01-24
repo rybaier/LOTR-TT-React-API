@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Characters from './components/Characters'
 import Movies from './components/Movies'
 import Quotes from './components/Quotes'
+
  
 function App() {
 
@@ -50,12 +51,12 @@ function App() {
     return (
       <div id='main-background'>
        <Container>
-        <h1>Hello Middle Earth</h1>
+        
             <Routes>
                   <Route path= '/' element={<Home />} />
-                  <Route path= '/components/Characters' element={<Characters />} />
-                  <Route path= '/components/Movies' element={<Movies />} />
-                  <Route path= '/components/Quotes' element={<Quotes  />} />
+                  <Route path= '/components/characters' element={<Characters />} />
+                  <Route path= '/components/movies' element={<Movies />} />
+                  <Route path= '/components/quotes' element={<Quotes  />} />
              </Routes>
         </Container>
           </div>

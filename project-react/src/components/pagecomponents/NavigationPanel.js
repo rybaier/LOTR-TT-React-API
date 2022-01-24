@@ -8,9 +8,9 @@ const NavigationPanel = () => {
         <Navbar color="green" dark light expand="md" >
             {/* Wrap these in Links? to utilize react router dom*/}
                 <NavLink className= 'links' href="/"> Home </NavLink>
-                 <NavLink className= 'links' href="/components/Quotes"> Quotes </NavLink>
-                 <NavLink className= 'links' href="/components/Characters"> Characters </NavLink>
-                 <NavLink className= 'links' href="/components/Movies"> Movies </NavLink>
+                 <NavLink className= 'links' href="/components/quotes"> Quotes </NavLink>
+                 <NavLink className= 'links' href="/components/characters"> Characters </NavLink>
+                 <NavLink className= 'links' href="/components/movies"> Movies </NavLink>
         </Navbar>
     </Card>
     )

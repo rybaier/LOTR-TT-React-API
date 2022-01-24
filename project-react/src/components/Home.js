@@ -4,7 +4,6 @@ import {Routes, Route, Link} from 'react-router-dom';
 import Header from "./pagecomponents/Header";
 import NavigationPanel from "./pagecomponents/NavigationPanel";
 import InfoDisplay from "./pagecomponents/InfoDisplay";
-import RandomSearch from "./pagecomponents/RandomSearch";
 
 
 
@@ -36,7 +35,7 @@ const Home = () => {
     .catch(console.error)
   }, [])
   if (!bookData) {
-      return <h6>Loading LOTR Data</h6>
+      return <p>Loading LOTR Data</p>
   }
 
   //ApI fetch brins back single object with the key docs which holds the array as its value
@@ -47,22 +46,20 @@ const Home = () => {
     return (
         <div className="home-background">
         <Container>
-            <h1>Home</h1>
-            <Header />
+        
             <Col className="nav-and-display">
+                   <Header />
                     <NavigationPanel />
-                    {/* <button onClick={()=> window.location.reload(false)}>
-                        Randomize Information 
-                    </button> */}
+                     <h2>Home</h2>
             </Col>
+            
+            
+          
             <Card className="home-display">
-            <CardTitle tag={'h4'}>LOTR Home Information Type</CardTitle>
-            <CardBody tag={'h6'}> Desired Informaion  name
-                <CardText> information </CardText>
-                <CardText> ternary for display wiki link if true, 
-                            no display if false</CardText>
-            </CardBody>
-        </Card>
+                <CardTitle className="h7">A stop for random information about Lord of the Rings. </CardTitle>
+                <CardTitle className="h7">Enjoy Your Toilet Time!</CardTitle>
+
+             </Card>
         </Container>
         </div>    
     )

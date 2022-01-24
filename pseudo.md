@@ -63,9 +63,9 @@
     - Navigation Panel has links to each component file (CHECK)
     
 - API framework and useEffect Hook, and Data functions 
-    - add API calls with corresponding endpoints to each component file 
+    - add API calls with corresponding endpoints to each component file (CHECK)
     - verify API calls are logged  (CHECK)
-    - organize data retrieved from API for each component file into basic layout for display
+    - organize data retrieved from API for each component file into basic layout for display (CHECK)
     
 - CSS 
     - basic component style  (CHECK)

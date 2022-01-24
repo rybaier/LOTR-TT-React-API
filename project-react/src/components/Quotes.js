@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import { Container, Row, Col, Card, CardBody, CardText, CardTitle } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
-import RandomSearch from './pagecomponents/RandomSearch'
 import InfoDisplay from './pagecomponents/InfoDisplay'
+
 
 const Quotes =() => {
    
-
+// insert loading state boolean here with useState wrapping loading in curly with &&
     const [quotesData, setQuotesData] = useState()
     const [characterData, setCharacterData] = useState()
     const [randomQuote, setRandomQuote] = useState()
@@ -50,27 +50,31 @@ const Quotes =() => {
      console.log(quotesData)
      
      if (!quotesData){
-         return <h6> Loading Quote Data</h6>
+         return <p> Loading Quote Data</p>
      }
 
     
      //how to put if statements regarding available api data to display??
     return (
-        <main className='quotes-background'>
+        <main className='quotes-background' >
         <Container>
-            <h1>Quotes</h1>
-            <Header />
+            
             <Col className="nav-and-display">
+                    <Header />
                     <NavigationPanel />
                     <button onClick={()=> window.location.reload(false)}>
                        Next Quote
                     </button>
+                    <h2>Quotes</h2>
             </Col>
+            
+            
+            
             {console.log(quotesData.docs[randomIndex])}
           
                     <Card className="quote-display">
-                    <CardTitle tag={'h2'}>"{quotesData.docs[randomIndex].dialog}"</CardTitle>
-                    <CardTitle tag={'h6'}> name {quotesData.docs[randomIndex].character}</CardTitle>
+                    <CardTitle className='h7'>" {quotesData.docs[randomIndex].dialog}"</CardTitle>
+                    {/* <CardTitle tag={'h6'}> name {quotesData.docs[randomIndex].character}</CardTitle> */}
                         {/* <CardText className='h7'> {movieName} </CardText> */}
                      </Card>
         </Container> 

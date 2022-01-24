@@ -5,8 +5,8 @@ import { Container, Col, Row, Card } from 'reactstrap'
 const Header = () => {
     return (
         <Container>
-            <Row>
-                <h2> Header</h2>
+            <Row className="header">
+                <h1>Hello Middle Earth Fans!</h1>
             </Row>    
         </Container>
     )

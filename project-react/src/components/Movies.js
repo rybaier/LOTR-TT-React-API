@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Container, Row, Col, Card, CardBody, CardText, CardTitle } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
-import RandomSearch from './pagecomponents/RandomSearch'
 import InfoDisplay from './pagecomponents/InfoDisplay'
 
 const Movies =() => {
@@ -33,25 +32,26 @@ const Movies =() => {
      }, [])
      console.log(movieData)
      if (!movieData){
-         return <h6> Loading Movie Data</h6>
+         return <p> Loading Movie Data</p>
      }
      
     return (
         <main id='movie-background'>
         <Container>
-            <h1>Movies</h1>
-            <Header />
             <Col className="nav-and-display">
-                    <NavigationPanel />
-                    <button onClick={()=> window.location.reload(false)}>
-                        Next Movie
-                    </button>
-            </Col>
+                <Header />
+                <NavigationPanel />
+                
+                <button onClick={()=> window.location.reload(false)}>
+                    Next Movie
+                </button>
+                <h2>Movies</h2>
+             </Col>
             {console.log(movieData.docs[randomIndex])}
 
                     <Card className="movies-display">
-                    <CardTitle tag={'h4'}>{movieData.docs[randomIndex].name}</CardTitle>
-                    <CardTitle tag={'h6'}> Rotten Tomatoes Score: {movieData.docs[randomIndex].rottenTomatoesScore}%</CardTitle>
+                    <CardTitle className='h7'>{movieData.docs[randomIndex].name}</CardTitle>
+                    <CardTitle className='h7'> Rotten Tomatoes Score: {movieData.docs[randomIndex].rottenTomatoesScore}%</CardTitle>
                         <CardText className='h7'> Run Time: {movieData.docs[randomIndex].runtimeInMinutes} </CardText>
                         <CardText className='h7'> Academy Award Nominations: {movieData.docs[randomIndex].academyAwardNominations}</CardText>
                         <CardText className='h7'> Academy Award Wins: {movieData.docs[randomIndex].academyAwardWins}</CardText>
