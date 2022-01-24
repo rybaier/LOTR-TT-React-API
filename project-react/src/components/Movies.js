@@ -43,7 +43,7 @@ const Movies =() => {
             <Header />
             <Col className="nav-and-display">
                     <NavigationPanel />
-                    <button>
+                    <button onClick={()=> window.location.reload(false)}>
                         Randomize Information 
                     </button>
             </Col>
