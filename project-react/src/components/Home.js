@@ -1,11 +1,7 @@
-import React, {useState, useEffect} from "react";
-import { Container, Row, Col, Card, CardBody, CardText, CardTitle } from "reactstrap";
-import {Routes, Route, Link} from 'react-router-dom';
-import Header from "./pagecomponents/Header";
-import NavigationPanel from "./pagecomponents/NavigationPanel";
-import InfoDisplay from "./pagecomponents/InfoDisplay";
-
-
+import React, { useState, useEffect } from "react" 
+import { Container, Col, Card, CardTitle } from "reactstrap" 
+import Header from "./pagecomponents/Header" 
+import NavigationPanel from "./pagecomponents/NavigationPanel"  
 
 const Home = () => {
     // Do I have seperate pages that display the information 
@@ -13,12 +9,12 @@ const Home = () => {
     // the component API url/endpoint and display info on home page?  
     //books component deleted Home component utilizes data for Books 
 
-    const [bookData, setBookData] = useState()
+    const [ bookData, setBookData ] = useState()
   
   const authorizeSearch = {
     //This is the how the bearer token is used in an authorization header
         'Accept': 'application/json', //this defines how the data is accepted
-        'Authorization' : `${process.env.REACT_APP_API_TOKEN}`
+        'Authorization' : `${ process.env.REACT_APP_API_TOKEN }`
       }
   const URL = process.env.REACT_APP_URL
   //use multiple fetch calls in useEffect in app.js combine with corresponding state variables for endpoints 
@@ -27,7 +23,7 @@ const Home = () => {
         //solved aboce by putting additional fetch calls in a .then of the original 
 //having multiple useEffects with a single fetch call within is what is working 
  useEffect(()=> { 
-    fetch(`${URL}book`, {
+    fetch(`${ URL }book`, {
       headers: authorizeSearch
     })
     .then(res => res.json())
@@ -44,24 +40,21 @@ const Home = () => {
   console.log(bookData)
  
     return (
-        <div className="home-background">
+      <div className="home-background">
         <Container>
         
-            <Col className="nav-and-display">
-                   <Header />
-                    <NavigationPanel />
-                     <h2>Home</h2>
-            </Col>
-            
-            
-          
-            <Card className="home-display">
-                <CardTitle className="h7">A stop for random information about Lord of the Rings. </CardTitle>
-                <CardTitle className="h7">Enjoy Your Toilet Time!</CardTitle>
+          <Col className="nav-and-display">
+            <Header />
+            <NavigationPanel />
+            <h2>Home</h2>
+          </Col>
 
-             </Card>
+          <Card className="home-display">
+            <CardTitle className="h7">A stop for random information about Lord of the Rings. </CardTitle>
+            <CardTitle className="h7">Enjoy Your Toilet Time!</CardTitle>
+          </Card>
         </Container>
-        </div>    
+      </div>    
     )
 }
 

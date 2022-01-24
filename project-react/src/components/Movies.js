@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Container, Row, Col, Card, CardBody, CardText, CardTitle } from 'reactstrap'
 import Header from './pagecomponents/Header'
@@ -7,8 +7,8 @@ import InfoDisplay from './pagecomponents/InfoDisplay'
 
 const Movies =() => {
 
-    const [movieData, setMovieData] = useState()
-    const [movieInfo, setMovieInfo] =useState(null)
+    const [ movieData, setMovieData ] = useState()
+    const [ movieInfo, setMovieInfo ] =useState(null)
 
     const randomIndex = Math.floor(Math.random()* 8)
     console.log(randomIndex)
@@ -17,12 +17,12 @@ const Movies =() => {
          const authorizeSearch = {
         //This is the how the bearer token is used in an authorization header
             'Accept': 'application/json', //this defines how the data is accepted
-            'Authorization' : `${process.env.REACT_APP_API_TOKEN}`
+            'Authorization' : `${ process.env.REACT_APP_API_TOKEN }`
           } 
   
      useEffect(()=> {
        
-        fetch(`${URL}movie`, {
+        fetch(`${ URL }movie`, {
           headers: authorizeSearch
         })
         .then(res => res.json())
@@ -36,27 +36,26 @@ const Movies =() => {
      }
      
     return (
-        <main id='movie-background'>
+      <main id='movie-background'>
         <Container>
-            <Col className="nav-and-display">
-                <Header />
-                <NavigationPanel />
-                
-                <button onClick={()=> window.location.reload(false)}>
-                    Next Movie
-                </button>
-                <h2>Movies</h2>
-             </Col>
-            {console.log(movieData.docs[randomIndex])}
+          <Col className="nav-and-display">
+            <Header />
+            <NavigationPanel />
+            
+            <button onClick={ ()=> window.location.reload(false) }>Next Movie
+            </button>
+            <h2>Movies</h2>
+          </Col>
+          {console.log(movieData.docs[ randomIndex ])}
 
-                    <Card className="movies-display">
-                    <CardTitle className='h7'>{movieData.docs[randomIndex].name}</CardTitle>
-                    <CardTitle className='h7'> Rotten Tomatoes Score: {movieData.docs[randomIndex].rottenTomatoesScore}%</CardTitle>
-                        <CardText className='h7'> Run Time: {movieData.docs[randomIndex].runtimeInMinutes} </CardText>
-                        <CardText className='h7'> Academy Award Nominations: {movieData.docs[randomIndex].academyAwardNominations}</CardText>
-                        <CardText className='h7'> Academy Award Wins: {movieData.docs[randomIndex].academyAwardWins}</CardText>
-                     </Card>
-            {/* the following code displays all data of array the above data gives random index data
+          <Card className="movies-display">
+            <CardTitle className='h7'>{movieData.docs[ randomIndex ].name}</CardTitle>
+            <CardTitle className='h7'> Rotten Tomatoes Score: {movieData.docs[ randomIndex ].rottenTomatoesScore}%</CardTitle>
+            <CardText className='h7'> Run Time: {movieData.docs[ randomIndex ].runtimeInMinutes} </CardText>
+            <CardText className='h7'> Academy Award Nominations: {movieData.docs[ randomIndex ].academyAwardNominations}</CardText>
+            <CardText className='h7'> Academy Award Wins: {movieData.docs[ randomIndex ].academyAwardWins}</CardText>
+          </Card>
+          {/* the following code displays all data of array the above data gives random index data
             {movieData.docs.map(movie =>{
                 return(
                     <Card className="info-display">
@@ -70,7 +69,7 @@ const Movies =() => {
             })} */}
          
         </Container> 
-        </main>
+      </main>
     )
 }
 export default Movies
