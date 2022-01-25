@@ -48,7 +48,6 @@
         "no-multiple-empty-lines": [ 2, { "max": 1, "maxEOF": 0, "maxBOF": 0 } ],
         "quotes": [ 1, "single", "avoid-escape" ],
         "no-use-before-define": [ 2, { "functions": false } ],
-        "semi": ["error", "never"],
         "prefer-const": 1,
         "react/prefer-es6-class": 0,
         "react-hooks/rules-of-hooks": "error",

@@ -52,7 +52,9 @@ const Characters =( { data } ) => {
             <CardTitle className='h7'> Race: {characterData.docs[ randomIndex ].race}</CardTitle>
             <CardText className='h7'> Gender: {characterData.docs[ randomIndex ].gender} </CardText>
             <CardText className='h7'> Birth: {characterData.docs[ randomIndex ].birth}</CardText>
-            <a className='h7' href = { characterData.docs[ randomIndex ].wikiUrl } target={ '_blank' } rel="noreferrer"> Wiki Link </a>
+            <a className='h7' href = { characterData.docs[ randomIndex ].wikiUrl } target={ '_blank' } rel="noreferrer"> Wiki Link </a> 
+                                                                    {/*Target and rel keys ensure that a new tab is opened and allows
+                                                                    easy navigation back to my site  */}
           </Card>
  
         </Container> 

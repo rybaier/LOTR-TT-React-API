@@ -6,9 +6,7 @@ import NavigationPanel from './pagecomponents/NavigationPanel'
 const Movies =() => {
 
     const [ movieData, setMovieData ] = useState()
-    const [ movieInfo, setMovieInfo ] =useState(null)
     const randomIndex = Math.floor(Math.random()* 8)
-    console.log(randomIndex)
       const URL = process.env.REACT_APP_URL
          const authorizeSearch = {
             'Accept': 'application/json', 
@@ -23,7 +21,6 @@ const Movies =() => {
         .then(json => setMovieData(json))
         .catch(console.error)
      }, [])
-     console.log(movieData)
      if (!movieData){
          return <p> Loading Movie Data</p>
      }
@@ -38,7 +35,6 @@ const Movies =() => {
             </button>
             <h2>Movies</h2>
           </Col>
-          {console.log(movieData.docs[ randomIndex ])}
           <Card className="movies-display">
             <CardTitle className='h7'>{movieData.docs[ randomIndex ].name}</CardTitle>
             <CardTitle className='h7'> Rotten Tomatoes Score: {movieData.docs[ randomIndex ].rottenTomatoesScore}%</CardTitle>

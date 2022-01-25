@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container, Col, Card,  CardTitle } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
+import Quiz from './Quiz'
 
 const Quotes =() => {
    
@@ -9,7 +10,7 @@ const Quotes =() => {
     const [ loading, setLoading ] =useState(false)
     const [ quotesData, setQuotesData ] = useState()
     const [ characterData, setCharacterData ] = useState()
-    const [ randomQuote, setRandomQuote ] = useState()
+    // const [ randomQuote, setRandomQuote ] = useState()
     const randomIndex = Math.floor(Math.random()* 1000)
     console.log(randomIndex)
     //trying to use array.length consistently breaks code creating undefined properties 
@@ -57,6 +58,7 @@ const Quotes =() => {
             {/* <CardTitle tag={'h6'}> name {quotesData.docs[randomIndex].character}</CardTitle> */}
             {/* <CardText className='h7'> {movieName} </CardText> */}
           </Card>
+          <Quiz randomQuote={ quotesData.docs[ randomIndex ] }/>
         </Container> 
       </main>
     )

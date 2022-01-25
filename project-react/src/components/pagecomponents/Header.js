@@ -1,14 +1,13 @@
-import React from "react";
-import { Container, Col, Row, Card } from 'reactstrap'
+import React from "react"
+import { Container, Row  } from 'reactstrap'
   
-
 const Header = () => {
     return (
-        <Container>
-            <Row className="header">
-                <h1>Hello Middle Earth Fans!</h1>
-            </Row>    
-        </Container>
+      <Container>
+        <Row className="header">
+          <h1>Hello Middle Earth Fans!</h1>
+        </Row>    
+      </Container>
     )
 }
 export default Header

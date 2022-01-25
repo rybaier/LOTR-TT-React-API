@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Container, Row, Col, Card,CardBody, CardText, CardTitle, NavLink } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
-import InfoDisplay from './pagecomponents/InfoDisplay'
 
 const Characters =(  ) => {
     const [ characterData, setCharacterData ] = useState()
