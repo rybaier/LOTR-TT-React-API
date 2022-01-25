@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Container, Col, Card,  CardTitle } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
-// import Quiz from './Quiz'
+import Quiz from './Quiz'
 
 const Quotes =() => {
    
@@ -58,7 +58,7 @@ const Quotes =() => {
             {/* <CardTitle tag={'h6'}> name {quotesData.docs[randomIndex].character}</CardTitle> */}
             {/* <CardText className='h7'> {movieName} </CardText> */}
           </Card>
-          {/* <Quiz randomQuote={ quotesData.docs[ randomIndex ] }/> */}
+          <Quiz randomQuote={ quotesData.docs[ randomIndex ] }/>
         </Container> 
       </main>
     )

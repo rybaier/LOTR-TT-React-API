@@ -3,7 +3,8 @@ import { Row, Container, Card, } from "reactstrap";
 
 const Quiz = ({ randomQuote }) => {
     console.log(randomQuote.character)
-    // const [ isLoading, setisLoading ] = useState(false)
+    const [ isLoading, setIsLoading ] = useState(false)
+    console.log(isLoading)
     const [ wrongCharacters, setWrongCharacters ] = useState()
     const [ rightCharacter, setRightCharacter ] = useState()
     const randomIndex1 = Math.floor(Math.random()* 333)
@@ -27,7 +28,7 @@ const Quiz = ({ randomQuote }) => {
         return <h3> Wrong the correct answer is { rightCharacter.docs[ 0 ].name } Click the next quote button to continue. </h3>
     }
     async function getData() {
-    
+  
        await fetch(`${ URL }character`, {
             headers: authorizeSearch
           })
@@ -39,28 +40,15 @@ const Quiz = ({ randomQuote }) => {
             } )
                .then(res=>res.json())
                .then(json => setRightCharacter(json)))
-          .then(setisLoading(false))  
   
           .catch(console.error)   
         console.log(wrongCharacters)
         console.log(rightCharacter)
     }
-    // useEffect(()=> {
-    //     Promise.all[
-    //         fetch(`${ URL }character`, { headers: authorizeSearch }),
-    //         fetch(characterURL,  {headers: authorizeSearch})
-    //     ]
-        
-    //       .then(res => res.json())
-    //       .then(json => setWrongCharacters(json))
-    //       .then()
-    //       .then( )
-    //            .then(res=>res.json())
-    //            .then(json => setRightCharacter(json)))
-  
-    //       .catch(console.error)   
-       
-    //  }, [])
+    useEffect(()=> { 
+       getData()
+
+     }, [])
     //     console.log(wrongCharacters)
     //     console.log(rightCharacter)
         if(!wrongCharacters) {
@@ -70,10 +58,10 @@ const Quiz = ({ randomQuote }) => {
     }
     return(
       <div className="quiz-answers">
-        <button >{ rightCharacter.docs[ 0 ].name } </button>
+        {/* <button >{ rightCharacter.docs[ 0 ].name } </button>
         <button > { wrongCharacters.docs[ randomIndex3 ].name } </button>
         <button >{ wrongCharacters.docs[ randomIndex2 ].name }</button>
-        <button >{ wrongCharacters.docs[ randomIndex1 ].name }</button>
+        <button >{ wrongCharacters.docs[ randomIndex1 ].name }</button> */}
       </div>
     )
 }

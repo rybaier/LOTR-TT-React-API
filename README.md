@@ -51,3 +51,5 @@ User wants info on LOTR
 ![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/Page%20display.png)
 #### Routes and Components
 ![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/Route%20Path%20and%20Component%20Visual.png)
+#### updated full WireFrame with stretch goal changes
+![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/updated%20sketch.png)
