@@ -58,7 +58,7 @@ const Quotes =() => {
             {/* <CardTitle tag={'h6'}> name {quotesData.docs[randomIndex].character}</CardTitle> */}
             {/* <CardText className='h7'> {movieName} </CardText> */}
           </Card>
-          <Quiz randomQuote={ quotesData.docs[ randomIndex ] }/>
+          {/* <Quiz randomQuote={ quotesData.docs[ randomIndex ] }/> */}
         </Container> 
       </main>
     )
