@@ -3,7 +3,7 @@ import { Row, Container, Card, } from "reactstrap";
 
 const Quiz = ({ randomQuote }) => {
     console.log(randomQuote.character)
-    const [ isLoading, setisLoading ] = useState(false)
+    // const [ isLoading, setisLoading ] = useState(false)
     const [ wrongCharacters, setWrongCharacters ] = useState()
     const [ rightCharacter, setRightCharacter ] = useState()
     const randomIndex1 = Math.floor(Math.random()* 333)
@@ -45,23 +45,35 @@ const Quiz = ({ randomQuote }) => {
         console.log(wrongCharacters)
         console.log(rightCharacter)
     }
-    useEffect(()=> {
-        setisLoading(true)
-        console.log(isLoading)
-        getData()
-     }, [])
-
-        if(isLoading === true) {
+    // useEffect(()=> {
+    //     Promise.all[
+    //         fetch(`${ URL }character`, { headers: authorizeSearch }),
+    //         fetch(characterURL,  {headers: authorizeSearch})
+    //     ]
+        
+    //       .then(res => res.json())
+    //       .then(json => setWrongCharacters(json))
+    //       .then()
+    //       .then( )
+    //            .then(res=>res.json())
+    //            .then(json => setRightCharacter(json)))
+  
+    //       .catch(console.error)   
+       
+    //  }, [])
+    //     console.log(wrongCharacters)
+    //     console.log(rightCharacter)
+        if(!wrongCharacters) {
         return (
           <p> ...Loading Answers...</p>
         )
     }
     return(
       <div className="quiz-answers">
-        {/* <button >{ rightCharacter.docs[ 0 ].name } </button>
+        <button >{ rightCharacter.docs[ 0 ].name } </button>
         <button > { wrongCharacters.docs[ randomIndex3 ].name } </button>
         <button >{ wrongCharacters.docs[ randomIndex2 ].name }</button>
-        <button >{ wrongCharacters.docs[ randomIndex1 ].name }</button> */}
+        <button >{ wrongCharacters.docs[ randomIndex1 ].name }</button>
       </div>
     )
 }

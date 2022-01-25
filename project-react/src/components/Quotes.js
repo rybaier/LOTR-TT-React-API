@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { Container, Col, Card,  CardTitle } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
-import Quiz from './Quiz'
+// import Quiz from './Quiz'
 
 const Quotes =() => {
    
 // insert loading state boolean here with useState wrapping loading in curly with &&
-    const [ loading, setLoading ] =useState(false)
+    // const [ loading, setLoading ] =useState(false)
     const [ quotesData, setQuotesData ] = useState()
-    const [ characterData, setCharacterData ] = useState()
+    // const [ characterData, setCharacterData ] = useState()
     // const [ randomQuote, setRandomQuote ] = useState()
     const randomIndex = Math.floor(Math.random()* 1000)
     console.log(randomIndex)
