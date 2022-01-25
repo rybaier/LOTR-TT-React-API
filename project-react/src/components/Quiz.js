@@ -34,6 +34,7 @@ const Quiz = ({ randomQuote }) => {
      }, [])
     console.log(wrongCharacters)
     console.log(rightCharacter)
+    console.log(rightCharacter.docs[ 0 ].name )
     if(!wrongCharacters) {
         return (
           <p> ...Loading Answers...</p>
@@ -41,7 +42,12 @@ const Quiz = ({ randomQuote }) => {
     }
 
     return(
-      <h1> test</h1>
+      <div className="quiz-answers">
+        <button>{ rightCharacter.docs[ 0 ].name } </button>
+        <button> { wrongCharacters.docs[ randomIndex3 ].name } </button>
+        <button>{ wrongCharacters.docs[ randomIndex2 ].name }</button>
+        <button>{ wrongCharacters.docs[ randomIndex1 ].name }</button>
+      </div>
     )
 }
 export default Quiz
