@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col, Card,CardBody, CardText, CardTitle, NavLink } from 'reactstrap'
+import { Container,  Col, Card, CardText, CardTitle } from 'reactstrap'
 import Header from './pagecomponents/Header'
 import NavigationPanel from './pagecomponents/NavigationPanel'
 
