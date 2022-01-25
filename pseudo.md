@@ -28,6 +28,8 @@
     - Presentation prep
 - Jan 26th - Presentation day!
 
+Timeline was an accurate representation of how goals were met. 
+
 ## HOW I WILL BUILD MY APP checklist
 #### Framework 
 - Framework list
@@ -69,8 +71,8 @@
     
 - CSS 
     - basic component style  (CHECK)
-    - Visual style mobile friendly first 
-        - scale up style with media query
+    - Visual style mobile friendly first (CHECK)
+        - scale up style with media query 
 
 #### FUNCTIONS 
 - Function List
@@ -98,7 +100,14 @@
         - function will return gathered data  
             - function will map through API data object for desired information
                 - use conditional to get correct data from object 
-                - return data that is considered true and matches search.     
+                - return data that is considered true and matches search.    
+    - Quiz Function
+        - Function will include taking character id from quote using api /character{id} endpoint to get the correct character name. 
+        - additional api call with /character endpoint. set data to state variables. 
+        - use 3 randomIndex generators to gather 3 random character names to use for multiple choice question. 
+        - create buttons for all 4 character names (3 wrong 1 right)
+        - create seperate correct answer and wrong answer messages with conditional statements and attach them to buttons with the characters name on them 
+ 
 
 ### MVP steps
 - MVP checklist
@@ -124,3 +133,4 @@
 - changed my pseudo to a md file from a js file based on sound advice was still doing pseudo out of habit because i liked the green color of the text while thinking however now that it's in a markdown it looks a lot nicer. so I must continue with this method moving forward. 
 - Perhaps a button that displays all the movie data instead of just random in the future  
 - random search component removed, single button with in it moved to individual pages instead 
+- copied component pages with building comments in them, then refractored all components except for quotes. which is where my main stretch goal is 

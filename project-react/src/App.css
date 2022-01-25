@@ -61,7 +61,8 @@ margin: 45px;
   color: white;
   margin: 30px;
   text-align: center;
-  
+  border-color: white;
+  border: 3px;
   
 }
 .characters-display{
@@ -99,20 +100,3 @@ body{
   ;
 
 }
-/* .main-background{
-background-image: url('./components/images/home.jpg');
-} */
-/* .home-background{
-background-image: url('./components/images/homepage.jpg');
-height: 100%;
-width: 100%;
-} */
-/* .character-background{
-background-image: url('./components/images/Characterpage.jpg');
-}
-.quotes-background{
-background-image: url('./components/images/quotespage.jpg');
-}
-.movie-background{
-  background-image: url('./components/images/moviepage.jpg');
-} */
