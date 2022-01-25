@@ -68,5 +68,5 @@ export default Quotes
 // how do i feel about this side effect as a visulaization of the app??
 // character: "5cd99d4bde30eff6ebccfca1"
 // dialog: "    You may triumph in the field of battle for a day, but against the power that     has risen in the east, there is no victory!  "
-// movie: "5cd95395de30eff6ebccde5d"
+// movie: "5cd95395de30eff6ebccde5d"rets
 // _id: "5cd96e05de30eff6ebcce8b6"
