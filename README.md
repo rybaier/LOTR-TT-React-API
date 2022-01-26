@@ -29,7 +29,7 @@ For this project I have decided to use an API that fetches data related to one o
 - Jan 26th - Presentation day!
 ##
 ## Project Build
-[Link to my pseduo code](https://github.com/rybaier/React-API/blob/main/pseudo.js)
+[Link to my pseduo code](https://github.com/rybaier/React-API/blob/main/pseudo.md)
 
 ### User Stories
 User wants info on LOTR 
