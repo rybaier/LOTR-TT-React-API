@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Row, Container, Card, } from "reactstrap";
 
 const Quiz = ({ randomQuote }) => {
     console.log(randomQuote.character)
-    // const [ isLoading, setIsLoading ] = useState(false)
-    // console.log(isLoading)
+ 
     const [ wrongCharacters, setWrongCharacters ] = useState(null)
     const [ rightCharacter, setRightCharacter ] = useState(null)
     const [ quizDisplayText, setQuizDisplayText ] = useState('Who Said It???')
@@ -46,7 +46,6 @@ const Quiz = ({ randomQuote }) => {
      }, [])
      
         console.log(wrongCharacters)
-    //     console.log(rightCharacter) 
         if(wrongCharacters === null || rightCharacter === null) {
         return (
           <p> ...Loading Answers...</p>
@@ -65,8 +64,3 @@ const Quiz = ({ randomQuote }) => {
     )
 }
 export default Quiz
-//use !not statement for loading quiz answers 
-//runnning into rendering issues again for quiz components
-// finally got it the simplest solution was includding an or (||) statement
-// with the other state variable to prevent the screen from loading until both 
-// calls had been made.
