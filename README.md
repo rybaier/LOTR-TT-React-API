@@ -55,3 +55,7 @@ User wants info on LOTR
 ![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/Route%20Path%20and%20Component%20Visual.png)
 #### updated full WireFrame with stretch goal changes
 ![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/updated%20sketch.png)
+#### Mobile Style
+![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/mobile%20style.png)
+#### Quiz Stretch Goal
+![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/quiz%20stretch%20goal.png)
