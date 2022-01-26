@@ -101,3 +101,20 @@ body{
   ;
 
 }
+#quiz{
+  border-color: white;
+  border: 3px;
+}
+.quiz-answers{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: 'Berkshire Swash', cursive;
+
+}
+#quiz-text{
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Berkshire Swash', cursive;
+}

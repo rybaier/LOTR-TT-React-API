@@ -54,7 +54,7 @@ const Quotes =() => {
           {console.log(quotesData.docs[ randomIndex ])}
           
           <Card className="quote-display">
-            <CardTitle className='h7'>" {quotesData.docs[ randomIndex ].dialog}"</CardTitle>
+            <CardTitle className='h7'>“ {quotesData.docs[ randomIndex ].dialog} ”</CardTitle>
             {/* <CardTitle tag={'h6'}> name {quotesData.docs[randomIndex].character}</CardTitle> */}
             {/* <CardText className='h7'> {movieName} </CardText> */}
           </Card>
