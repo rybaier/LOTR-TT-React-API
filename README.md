@@ -29,6 +29,8 @@ For this project I have decided to use an API that fetches data related to one o
 - Jan 26th - Presentation day!
 ##
 ## Project Build
+Over the course of the project I  was able to maintain my timeline and meet the goals that I set for myself daily. I only ran into a couple of blockers that halted progress until they could be solved. The first was when making multiple api calls and preventing the site from rendering until all the data had been gathered from the various endpoints. Once that was solved utilizing the data was pretty straight forward. It took me a little time to get the function right for pulling from the gathered data at random, once I did then it was straight on until I reached MVP. After I reached mvp I spent my time styling, (which I styled primarily for mobile phones), and then I began to work on stretch goal quiz portion of the quotes, which I was able to finish before presentation time. 
+
 [Link to my pseduo code](https://github.com/rybaier/React-API/blob/main/pseudo.md)
 
 ### User Stories
@@ -43,7 +45,7 @@ User wants info on LOTR
 - User will want available information to be easily navigable between categories for random information
 - User will want search functionality to be in home page to make it easy to search for information
 
-### MVP 
+
 
 #### Full WireFrame Sketch
 ![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/Full%20sketch.png)
