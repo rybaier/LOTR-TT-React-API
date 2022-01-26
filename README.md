@@ -1,4 +1,4 @@
-# React-API - ?The One App - working title?
+# React-API - LOTR Toilet Time
 ### Proposal 
 For this project I have decided to use an API that fetches data related to one of the greatest Trilogy's of all time. This App will provide users with random basic information for their journey across Middle Earth, from movie stats and quotes to short snippets of factual info of characters 
 
