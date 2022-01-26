@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Row, Container, Card, } from "reactstrap";
 
 const Quiz = ({ randomQuote }) => {
     console.log(randomQuote.character)
@@ -55,8 +54,8 @@ const Quiz = ({ randomQuote }) => {
     }
     return(
       <div id='quiz'>
-        <h3 id="quiz-text">“ { quizDisplayText } ”</h3>
-        <div className="quiz-answers">
+        <h3 id='quiz-text'>“ { quizDisplayText } ”</h3>
+        <div className='quiz-answers'>
           <button onClick={ answerQuiz }>{ rightCharacter.docs[ 0 ].name } </button>
           <button onClick={ answerQuizWrong }> { wrongCharacters.docs[ randomIndex3 ].name } </button>
           <button onClick={ answerQuizWrong }>{ wrongCharacters.docs[ randomIndex2 ].name }</button>
