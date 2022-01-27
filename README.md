@@ -33,6 +33,9 @@ Over the course of the project I  was able to maintain my timeline and meet the 
 
 [Link to my pseduo code](https://github.com/rybaier/React-API/blob/main/pseudo.md)
 
+### Technologies used
+- React - Reactstrap - Bootstrap - HTML - CSS - JavaScript
+
 ### User Stories
 User wants info on LOTR 
 - User wants random facts about characters/movies/quotes - user hits RF button on corresponding page 

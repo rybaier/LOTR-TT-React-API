@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Container, Card, } from "reactstrap";
+import QuizAnswers from './QuizAnswers'
 
 const Quiz = ({ randomQuote }) => {
     console.log(randomQuote.character)
@@ -22,11 +22,11 @@ const Quiz = ({ randomQuote }) => {
 
     const characterURL = `${ URL }character?_id=${ randomQuote.character }`
     console.log(characterURL)
-    function answerQuiz (e) {
+    const answerQuiz = (e) => {
        e.preventDefault()
         setQuizDisplayText('Correct! Click the next quote button to continue.')
     }
-    function answerQuizWrong (e) {
+    const answerQuizWrong = (e) => {
       e.preventDefault()
         setQuizDisplayText(`Wrong the correct answer is -${ rightCharacter.docs[ 0 ].name }- Click the next quote button to continue. `)   
     }
@@ -51,14 +51,14 @@ const Quiz = ({ randomQuote }) => {
           <p> ...Loading Answers...</p>
         )
     }
+  
     return(
       <div id='quiz'>
         <h3 id='quiz-text'>“ { quizDisplayText } ”</h3>
         <div className='quiz-answers'>
-          <button onClick={ answerQuiz }>{ rightCharacter.docs[ 0 ].name } </button>
-          <button onClick={ answerQuizWrong }> { wrongCharacters.docs[ randomIndex3 ].name } </button>
-          <button onClick={ answerQuizWrong }>{ wrongCharacters.docs[ randomIndex2 ].name }</button>
-          <button onClick={ answerQuizWrong }>{ wrongCharacters.docs[ randomIndex1 ].name }</button>
+          <QuizAnswers right = { rightCharacter.docs[ 0 ].name } wrong1 = { wrongCharacters.docs[ randomIndex1 ].name } 
+          wrong2 = { wrongCharacters.docs[ randomIndex2 ].name } wrong3 = { wrongCharacters.docs[ randomIndex3 ].name } 
+          answerQuiz = { answerQuiz } answerQuizWrong = { answerQuizWrong } />
         </div>
       </div>  
     )
