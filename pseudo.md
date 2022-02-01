@@ -122,7 +122,7 @@ Timeline was an accurate representation of how goals were met.
 - add Who said it quiz version to quotes
     - Match random quote data with character id for character name for guessing 
     - add 8 random charcater names 
-    - 
+
 ### Build NOTES 
 - api token was verified using hoppscotch.io (quite a handy tool I have discovered as it also displays the data that is fetched!)
 - .env succesfully hidden (note it needs to specifically be in the react app directory not the repo directory  )

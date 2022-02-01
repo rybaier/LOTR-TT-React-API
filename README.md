@@ -29,10 +29,10 @@ For this project I have decided to use an API that fetches data related to one o
 ## Project Build
 Over the course of the project I  was able to maintain my timeline and meet the goals that I set for myself daily. I only ran into a couple of blockers that halted progress until they could be solved. The first was when making multiple api calls and preventing the site from rendering until all the data had been gathered from the various endpoints. Once that was solved utilizing the data was pretty straight forward. It took me a little time to get the function right for pulling from the gathered data at random, once I did then it was straight on until I reached MVP. After I reached mvp I spent my time styling, (which I styled primarily for mobile phones), and then I began to work on stretch goal quiz portion of the quotes, which I was able to finish before presentation time. 
 
-[Link to my pseduo code](https://github.com/rybaier/React-API/blob/main/pseudo.md)
+Link to my [Pseduo code](https://github.com/rybaier/React-API/blob/main/pseudo.md)
 
 ### Technologies used
-- React - Reactstrap - Bootstrap - HTML - CSS - JavaScript
+- React - Reactstrap - Bootstrap - HTML - CSS - JavaScript - Deployed through Netlify
 
 ### User Stories
 User wants info on LOTR 
@@ -45,7 +45,7 @@ User wants info on LOTR
     - user searches LOTR book info
 - User will want available information to be easily navigable between categories for random information
 - User will want search functionality to be in home page to make it easy to search for information
-
+##
 
 
 #### Full WireFrame Sketch
@@ -60,3 +60,6 @@ User wants info on LOTR
 ![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/mobile%20style.png)
 #### Quiz Stretch Goal
 ![alt text](https://github.com/rybaier/React-API/blob/main/wireframes/quiz%20stretch%20goal.png)
+
+## Current Deployed Product
+ Link to [LOTR-Toilet-Time](https://lotr-toilet-time.netlify.app/)
