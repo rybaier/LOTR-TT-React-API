@@ -79,18 +79,18 @@ margin: 45px;
   color: white;
   margin: 30px;
   text-align: center;
-  
 }
 .home-display{
   font-family: 'Berkshire Swash', cursive;
   text-align: center;
   background: transparent;
-  
 }
 .h7{
   font-size: 4vw ;
 }
-
+.h8{
+  font-size: 6vw ;
+}
 body{
   background-color: rgb(6, 6, 6);
   background-image: url('./components/images/homepage.jpg');

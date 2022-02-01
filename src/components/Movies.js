@@ -31,17 +31,20 @@ const Movies =() => {
           <Col className="nav-and-display">
             <Header />
             <NavigationPanel />
-            <button onClick={ ()=> window.location.reload(false) }>Next Movie
-            </button>
             <h2>Movies</h2>
+            {movieData.docs.map(movie => {
+                return(
+                  <Card className="movies-display">
+                    <CardTitle className='h8'><strong><u>{movie.name}</u></strong></CardTitle>
+                    <CardTitle className='h7'> Rotten Tomatoes Score: {movie.rottenTomatoesScore}%</CardTitle>
+                    <CardText className='h7'> Run Time: {movie.runtimeInMinutes} </CardText>
+                    <CardText className='h7'> Academy Award Nominations: {movie.academyAwardNominations}</CardText>
+                    <CardText className='h7'> Academy Award Wins: {movie.academyAwardWins}</CardText>
+                  </Card>
+        
+                )
+            })} 
           </Col>
-          <Card className="movies-display">
-            <CardTitle className='h7'>{movieData.docs[ randomIndex ].name}</CardTitle>
-            <CardTitle className='h7'> Rotten Tomatoes Score: {movieData.docs[ randomIndex ].rottenTomatoesScore}%</CardTitle>
-            <CardText className='h7'> Run Time: {movieData.docs[ randomIndex ].runtimeInMinutes} </CardText>
-            <CardText className='h7'> Academy Award Nominations: {movieData.docs[ randomIndex ].academyAwardNominations}</CardText>
-            <CardText className='h7'> Academy Award Wins: {movieData.docs[ randomIndex ].academyAwardWins}</CardText>
-          </Card>
         </Container> 
       </main>
     )
