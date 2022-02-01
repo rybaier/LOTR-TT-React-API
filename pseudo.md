@@ -124,6 +124,8 @@ Timeline was an accurate representation of how goals were met.
     - add 8 random charcater names 
     - 
 ### Build NOTES 
+- api token was verified using hoppscotch.io (quite a handy tool I have discovered as it also displays the data that is fetched!)
+- .env succesfully hidden (note it needs to specifically be in the react app directory not the repo directory  )
 - after building framework and attaching links decided to make seperate info display sections inside each component page
 - and attaching API data, it became clear that the most seemless way to do this was to remove the infodisplay component entirely and process the data on the component page directly to avoid data diplay cross contamination
 - changed random search function to random display data function on page render 
