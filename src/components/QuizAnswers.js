@@ -3,23 +3,33 @@ import React, { useState, useEffect } from 'react'
 const QuizAnswers = ({ right, wrong1, wrong2, wrong3, answerQuiz, answerQuizWrong }) => {
     console.log(right, wrong1, wrong2, wrong3 )
     const answers = [ right, wrong1, wrong2, wrong3 ] 
-    const rightOrWrong = (e ) => {
-     console.log('works')
-     console.log ()
-        if (e.target.innerHTML === right) {
+    
+    const shuffle = answers.map(answer => ({ answer, sort: Math.random() })).sort((a,b) => a.sort - b.sort).map(({ answer }) => answer)
+    
+    console.log(shuffle)
+  
+    const rightOrWrong = (e) => {
+     console.log('works', e)
+     
+        if (e.target.innerText === right) {
             return (
-                answerQuiz
+                answerQuiz()
                 )}
-        // if (e.target !== right) return answerQuizWrong
+        if (e.target.innerText !== right){
+          console.log("Guessed wrong");
+          return answerQuizWrong()
+        } 
+        //try using && logical operator in main body to reference different 
+        //try ternary statemen for different answers
+        
     }
-    console.log(answers)
     return (
       <div>
         <h3>Test</h3>
-        <button onClick={ (e) => { e.target.innerHTML === right ? console.log('1'): console.log('2')} }>{ right } </button> 
-        <button onClick={ rightOrWrong }> { wrong1 } </button>
-        <button onClick={ rightOrWrong }>{ wrong2 }</button>
-        <button onClick={ rightOrWrong }>{ wrong3 }</button>  
+        <button onClick={ (e) => rightOrWrong(e)  }>{ right } </button> 
+        <button onClick={ (e) => rightOrWrong(e) }> { wrong1 } </button>
+        <button onClick={ (e) => rightOrWrong(e) }>{ wrong2 }</button>
+        <button onClick={ (e) => rightOrWrong(e) }>{ wrong3 }</button>  
       </div> 
     )
 }

@@ -23,11 +23,11 @@ const Quiz = ({ randomQuote }) => {
     const characterURL = `${ URL }character?_id=${ randomQuote.character }`
     console.log(characterURL)
     const answerQuiz = (e) => {
-       e.preventDefault()
+      //  e.preventDefault()
         setQuizDisplayText('Correct! Click the next quote button to continue.')
     }
     const answerQuizWrong = (e) => {
-      e.preventDefault()
+      // e.preventDefault()
         setQuizDisplayText(`Wrong the correct answer is -${ rightCharacter.docs[ 0 ].name }- Click the next quote button to continue. `)   
     }
 
