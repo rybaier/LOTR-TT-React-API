@@ -28,7 +28,7 @@ const Quiz = ({ randomQuote }) => {
     }
     const answerQuizWrong = (e) => {
       // e.preventDefault()
-        setQuizDisplayText(`Wrong the correct answer is -${ rightCharacter.docs[ 0 ].name }- Click the next quote button to continue. `)   
+        setQuizDisplayText('Wrong try again or click next quote to continue')   
     }
 
     useEffect(()=> { 
