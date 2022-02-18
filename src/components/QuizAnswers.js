@@ -26,7 +26,6 @@ const QuizAnswers = ({ right, wrong1, wrong2, wrong3, answerQuiz, answerQuizWron
     }
     return (
       <div>
-        <h3>Test</h3>
         <button onClick={ (e) => rightOrWrong(e)  }>{ shuffle[ 0 ] } </button> 
         <button onClick={ (e) => rightOrWrong(e) }> { shuffle[ 1 ] } </button>
         <button onClick={ (e) => rightOrWrong(e) }>{ shuffle[ 2 ] }</button>

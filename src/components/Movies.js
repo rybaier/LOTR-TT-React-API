@@ -34,7 +34,7 @@ const Movies =() => {
             <h2>Movies</h2>
             {movieData.docs.map(movie => {
                 return(
-                  <Card className="movies-display">
+                  <Card className="movies-display" key= {  movie._id }>
                     <CardTitle className='h8'><strong><u>{movie.name}</u></strong></CardTitle>
                     <CardTitle className='h7'> Rotten Tomatoes Score: {movie.rottenTomatoesScore}%</CardTitle>
                     <CardText className='h7'> Run Time: {movie.runtimeInMinutes} </CardText>

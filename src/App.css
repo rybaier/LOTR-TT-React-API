@@ -28,7 +28,7 @@ border-radius: 8px;
 border-color: white;
 color: white;
 background: transparent;
-margin: 45px;
+margin: 20px;
 
 }
 /* checkout blockquote on css tricks */
@@ -60,7 +60,7 @@ margin: 45px;
   font-family: 'Berkshire Swash', cursive;
   background: transparent;
   color: white;
-  margin: 30px;
+  margin: 20px;
   text-align: center;
   border-color: white;
   border: 3px;
@@ -108,6 +108,7 @@ body{
 .quiz-answers{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   font-family: 'Berkshire Swash', cursive;
 

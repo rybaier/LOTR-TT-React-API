@@ -37,13 +37,14 @@ const Quotes =() => {
           <Col className="nav-and-display">
             <Header />
             <NavigationPanel />
-            <button onClick={ ()=> window.location.reload(false) }> Next Quote </button>
             <h2>Quotes</h2>
           </Col>
 
           {console.log(quotesData.docs[ randomIndex ])}
           
           <Card className="quote-display">
+            <button onClick={ ()=> window.location.reload(false) }> Next Quote </button>
+
             <CardTitle className='h7'>“ { quotesData.docs[ randomIndex ].dialog } ”</CardTitle>
           </Card>
           <Quiz randomQuote={ quotesData.docs[ randomIndex ] }/>
