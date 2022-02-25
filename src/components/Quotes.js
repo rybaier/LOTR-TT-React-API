@@ -37,7 +37,7 @@ const Quotes =() => {
           <Col className="nav-and-display">
             <Header />
             <NavigationPanel />
-            <h2>Quotes</h2>
+            <h2>Quotes Quiz</h2>
           </Col>
 
           {console.log(quotesData.docs[ randomIndex ])}

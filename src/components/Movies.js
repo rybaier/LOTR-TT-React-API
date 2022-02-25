@@ -24,7 +24,7 @@ const Movies =() => {
      if (!movieData){
          return <p> Loading Movie Data</p>
      }
-     
+     console.log(movieData)
     return (
       <main id='movie-background'>
         <Container>
